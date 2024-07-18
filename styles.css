@@ -2,3 +2,28 @@
     --brand: green;
     --secondary: blue;
 }
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fbbf33;
+}
+
+nav img {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(175, 175, 175);
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.8rem;
+}
