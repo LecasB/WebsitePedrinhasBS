@@ -1,0 +1,153 @@
+/* styles.css */
+.mobile-only-message{
+    font-size: 30px;
+    margin: 50px;
+    display: block;
+    text-align: center;
+}
+section{
+    display: none;
+}
+nav{
+    display: none;
+}
+@media (max-width: 500px) {
+main{
+    margin-top:83px;
+}
+header{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    filter: drop-shadow(1px 2px 3px rgb(43, 43, 43));
+}
+nav{
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    font-size: 14px;
+}
+nav .logo img{
+    margin: 10px;
+    width: 80px;
+}
+section {
+    display: block;
+}
+.mobile-only-message{
+    display: none;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+}
+li{
+    margin: 0 5px;
+    font-weight: 700;
+}
+h1{
+    font-size: 35px;
+    color: #333;
+    margin: 0;
+    text-align: center;   
+}
+.img-container{
+    width: 90%;
+    margin: 20px auto 0px auto;
+}
+.img-container img{
+    margin: 20px 0;
+    border-radius: 5px;
+    filter:drop-shadow(1px 2px 1px rgb(151, 151, 151));
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.team-work{
+    background-color: #f0f0f0;
+    padding: 60px 0px;
+}
+.paragraf-center{
+    font-weight: 500;
+    color: #414141;
+    margin: 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto 0px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    object-fit: cover;
+    height: 65vh ;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.slide p {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1em;
+    margin: 0;
+    font-weight: 700;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.hidden {
+    display: none;
+}
