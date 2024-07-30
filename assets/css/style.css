@@ -56,13 +56,29 @@ li{
 }
 h1{
     font-size: 35px;
-    color: #333;
+    color: #dadada;
     margin: 0;
     text-align: center;   
 }
 .img-container{
     width: 90%;
     margin: 20px auto 0px auto;
+}
+.contentphrase{
+    padding: 40px 0px;
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+.contentphrase p{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 90%;
+    text-align: justify;
+    color: #dadada;
 }
 .img-container img{
     margin: 20px 0;
@@ -72,17 +88,38 @@ h1{
     height: 300px;
     object-fit: cover;
 }
+.img-chair{
+    margin: 30px auto;
+    border-radius: 5px;
+    filter:drop-shadow(1px 2px 1px rgb(151, 151, 151));
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+}
 .team-work{
     background-color: #f0f0f0;
-    padding: 60px 0px;
+    padding: 0px 0px;
 }
-.paragraf-center{
-    font-weight: 500;
-    color: #414141;
-    margin: 0;
+.contentphrase .paragraf-center{
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700 ;
+    color: #e7e7e7;
+    margin: 0 auto;
     text-align: center;
 }
-
+.paragraf-centere{
+    color: #333 !important;
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700 ;
+    color: #e7e7e7;
+    margin: 60px auto 0px auto;
+    text-align: center;
+}
+.gallery-title{
+    color: #333;
+}
 .menu ul {
     list-style: none;
     padding: 0;
