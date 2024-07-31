@@ -1,33 +1,89 @@
 main {
   box-sizing: border-box;
-  margin: 90px 5px 0px 5px;
+  margin-top: 87px;
 }
 @media (max-width: 500px) {
   body {
-    background: rgb(43, 43, 43);
+    background: #dadada;
   }
 
   .criar-mensagem p {
     margin: 0;
-    color: #dadada;
+    color: white;
   }
-
+  /* 
+  #dadada 
+  rgb(43, 43, 43)
+  #151515
+  */
   .criar-mensagem {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 20px 5px;
+    background: #151515;
+    align-items: center;
+    gap: 10px;
   }
 
   .btn-criar {
     text-decoration: none;
-    color: black;
+    color: rgb(43, 43, 43);
     background: #dadada;
     padding: 5px;
     text-align: center;
   }
 
+  section {
+    background: #dadada;
+  }
+
   .sec-todas-mensagens {
     display: flex;
     flex-direction: column;
+    padding: 0px 5px;
+    margin-bottom: 50px;
+  }
+
+  .mensagem {
+    padding: 10px;
+    width: 100%;
+    background: blanchedalmond;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 10px -10px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-wrap: break-word;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .fita-1,
+  .fita-2 {
+    width: 9rem;
+    height: 30px;
+    position: absolute;
+    translate: 0% -1.5rem;
+    rotate: 3deg;
+    background-image: url("../images/fita.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .fita-2 {
+    width: 3rem;
+    height: 2.2rem;
+    translate: 0% -1rem;
+    background-image: url("../images/Drawing-Pin.png");
+    transform: scaleX(-1);
+  }
+
+  #mensagens-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 }
