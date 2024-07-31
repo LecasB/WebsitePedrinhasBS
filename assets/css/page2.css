@@ -1,0 +1,33 @@
+main {
+  box-sizing: border-box;
+  margin: 90px 5px 0px 5px;
+}
+@media (max-width: 500px) {
+  body {
+    background: rgb(43, 43, 43);
+  }
+
+  .criar-mensagem p {
+    margin: 0;
+    color: #dadada;
+  }
+
+  .criar-mensagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-criar {
+    text-decoration: none;
+    color: black;
+    background: #dadada;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .sec-todas-mensagens {
+    display: flex;
+    flex-direction: column;
+  }
+}
