@@ -20,6 +20,7 @@ document
       .select();
 
     if (error) {
+      feedbackElement.className = "error";
       console.error("Erro ao inserir dados:", error);
       feedbackElement.textContent = "Erro ao inserir a mensagem.";
       feedbackElement.style.color = "red";
@@ -37,6 +38,7 @@ document
         .eq("id", insertedId);
 
       if (updateError) {
+        feedbackElement.className = "error";
         console.error("Erro ao atualizar nome:", updateError);
         feedbackElement.textContent = "Erro ao atualizar o nome.";
         feedbackElement.style.color = "red";
@@ -45,6 +47,7 @@ document
     }
 
     console.log("Mensagem inserida com sucesso:", data);
+    feedbackElement.className = "insert";
     feedbackElement.textContent = "Mensagem inserida com sucesso!";
     feedbackElement.style.color = "green";
     document.getElementById("mensagemForm").reset();

@@ -16,6 +16,7 @@ async function loadData() {
   const { data, error } = await supabase
     .from("mensagens")
     .select()
+    .order("id", { ascending: false })
     .range(currentPage * pageSize, (currentPage + 1) * pageSize - 1);
 
   isLoading = false;
@@ -55,6 +56,8 @@ async function loadData() {
 
   currentPage++;
 }
+
+function color() {}
 
 // Load initial data
 loadData();

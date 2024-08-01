@@ -3,20 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/page2.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Exemplo Supabase</h1>
-    <form id="mensagemForm">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" />
-      <br />
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-      <br />
-      <button type="submit">Criar</button>
-    </form>
-    <p id="feedback"></p>
+    <header>
+      <nav class="menu">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" class="logotipo" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Nova Mensagem</h1>
+      <form id="mensagemForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" />
+        <br />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="8" required></textarea>
+        <br />
+        <button type="submit">Criar</button>
+      </form>
+      <p id="feedback"></p>
+    </main>
     <script type="module" src="./assets/js/criar.mesn.js"></script>
   </body>
 </html>

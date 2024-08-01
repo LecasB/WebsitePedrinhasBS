@@ -2,9 +2,21 @@ main {
   box-sizing: border-box;
   margin-top: 87px;
 }
+
+form {
+  display: none;
+}
 @media (max-width: 500px) {
   body {
     background: #dadada;
+  }
+  main {
+    background: transparent;
+  }
+
+  h1 {
+    background-color: rgb(43, 43, 43);
+    padding: 5px 0;
   }
 
   .criar-mensagem p {
@@ -47,6 +59,7 @@ main {
 
   .mensagem {
     padding: 10px;
+
     width: 100%;
     background: blanchedalmond;
     box-sizing: border-box;
@@ -85,5 +98,44 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    background: #dadada;
+    box-sizing: border-box;
+  }
+
+  form button {
+    margin-top: 15px;
+    position: relative;
+    width: 5rem;
+  }
+
+  .error {
+    background: rgba(255, 0, 0, 0.685);
+    padding: 10px;
+    margin: 0;
+  }
+
+  .insert {
+    background: rgb(172, 255, 47);
+    padding: 10px;
+    margin: 0;
+    position: relative; /* Necessário para a animação funcionar */
+    animation: slideIn 0.3s forwards; /* Define a animação slideIn com duração de 1 segundo */
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -100%; /* Começa fora da tela, à esquerda */
+      opacity: 0; /* Começa invisível */
+    }
+    to {
+      left: 0; /* Termina na posição original */
+      opacity: 1; /* Torna-se visível */
+    }
   }
 }
