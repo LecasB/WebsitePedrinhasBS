@@ -31,6 +31,7 @@ async function loadData() {
   data.forEach((mensagem) => {
     const mensagemDiv = document.createElement("div");
     mensagemDiv.classList.add("mensagem");
+    mensagemDiv.style.background = color();
 
     const fitaDiv = document.createElement("div");
     const randomNumber = Math.floor(Math.random() * 2) + 1; // Gera um número aleatório entre 1 e 2
@@ -57,7 +58,33 @@ async function loadData() {
   currentPage++;
 }
 
-function color() {}
+function color() {
+  const randomNumber = Math.floor(Math.random() * 6) + 1;
+  switch (randomNumber) {
+    case 1:
+      return "blanchedalmond";
+      break;
+    case 2:
+      return "#eaf1f3";
+      break;
+    case 3:
+      return "#e2b552";
+      break;
+    case 4:
+      return "#b5da44";
+      break;
+    case 5:
+      return "#a0a6f3";
+      break;
+    case 6:
+      return "#d97971";
+      break;
+
+    default:
+      return "blanchedalmond";
+      break;
+  }
+}
 
 // Load initial data
 loadData();
