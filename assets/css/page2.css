@@ -57,43 +57,6 @@ form {
     margin-bottom: 50px;
   }
 
-  .mensagem {
-    padding: 10px;
-
-    width: 100%;
-    background: blanchedalmond;
-    box-sizing: border-box;
-    box-shadow: 0px 15px 10px -10px gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-wrap: break-word;
-  }
-
-  .conteudo {
-    width: 100%;
-  }
-
-  .fita-1,
-  .fita-2 {
-    width: 9rem;
-    height: 30px;
-    position: absolute;
-    translate: 0% -1.5rem;
-    rotate: 3deg;
-    background-image: url("../images/fita.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .fita-2 {
-    width: 3rem;
-    height: 2.2rem;
-    translate: 0% -1rem;
-    background-image: url("../images/Drawing-Pin.png");
-    transform: scaleX(-1);
-  }
-
   #mensagens-container {
     display: flex;
     flex-direction: column;

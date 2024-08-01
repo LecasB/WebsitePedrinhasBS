@@ -1,0 +1,53 @@
+.mensagem {
+  padding: 10px;
+  min-height: 270px;
+  width: 100%;
+  background: blanchedalmond;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 10px -10px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+
+.conteudo {
+  font-size: 1.1rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.fita-1,
+.fita-2 {
+  width: 9rem;
+  height: 30px;
+  position: absolute;
+  translate: 0% -1.5rem;
+  rotate: 3deg;
+  background-image: url("../images/fita.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fita-2 {
+  width: 3rem;
+  height: 2.2rem;
+  translate: 0% -1rem;
+  background-image: url("../images/Drawing-Pin.png");
+  transform: scaleX(-1);
+}
+
+section .view {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+section .view a {
+  padding: 5px;
+  border-radius: 5px;
+  background: rgb(204, 204, 204);
+  border: 1px solid gray;
+  text-decoration: none;
+  color: black;
+}
