@@ -34,19 +34,26 @@ async function random_mens() {
   mensagemDiv.style.background = color();
 
   const fitaDiv = document.createElement("div");
-  const randomNumber = Math.floor(Math.random() * 2) + 1; // Gera um número aleatório entre 1 e 2
+  const randomNumber = Math.floor(Math.random() * 2) + 1;
   fitaDiv.classList.add(`fita-${randomNumber}`);
 
   const conteudoDiv = document.createElement("div");
   conteudoDiv.classList.add("conteudo");
 
   const pDe = document.createElement("p");
-  pDe.innerHTML = `De: <b>${mensagem[0].nome}</b>`; // Assuming 'nome' is a field in your 'mensagens' table
+  pDe.setAttribute("data-lang", "en");
+  pDe.className = "active";
+  pDe.innerHTML = `From: <b>${mensagem[0].nome}</b>`;
+
+  const pDe2 = document.createElement("p");
+  pDe2.setAttribute("data-lang", "pt");
+  pDe2.innerHTML = `De: <b>${mensagem[0].nome}</b>`;
 
   const pMensagem = document.createElement("p");
-  pMensagem.textContent = mensagem[0].texto; // Assuming 'texto' is a field in your 'mensagens' table
+  pMensagem.textContent = mensagem[0].texto;
 
   conteudoDiv.appendChild(pDe);
+  conteudoDiv.appendChild(pDe2);
   conteudoDiv.appendChild(pMensagem);
 
   mensagemDiv.appendChild(fitaDiv);
@@ -62,7 +69,7 @@ function color() {
       return "blanchedalmond";
       break;
     case 2:
-      return "#eaf1f3";
+      return "#dcf5fc";
       break;
     case 3:
       return "#e2b552";

@@ -19,6 +19,12 @@ form {
     padding: 5px 0;
   }
 
+  .title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
+
   .criar-mensagem p {
     margin: 0;
     color: white;
@@ -39,11 +45,44 @@ form {
   }
 
   .btn-criar {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     color: rgb(43, 43, 43);
-    background: #dadada;
-    padding: 5px;
     text-align: center;
+    gap: 6px;
+    align-items: center;
+    padding: 5px 10px;
+    background: #d4ba5f;
+    font-size: 1.2rem;
+    border-radius: 50px;
+  }
+
+  .btn-criar img {
+    max-width: 20px;
+    animation: rodaEroda 1s linear infinite;
+  }
+
+  @keyframes rodaEroda {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(-8deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(8deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   section {
@@ -100,5 +139,60 @@ form {
       left: 0; /* Termina na posição original */
       opacity: 1; /* Torna-se visível */
     }
+  }
+  .help-me-pls {
+    padding: 10px;
+  }
+
+  form {
+    background-color: #d4ba5f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.1em;
+    border: 2px dashed #eb8126;
+    border-radius: 15px;
+    background-color: #e0c665;
+    box-shadow: 0 0 0 4px #e0c665, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: 4s ease-in-out;
+    /* align-items: center; */
+  }
+
+  .back-btn {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  form label {
+    display: hidden;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    outline: none;
+    padding: 0.5em;
+    border: 1px solid #daa06d;
+    color: black;
+    border-radius: 10px;
+    background-color: #eaddca;
+  }
+  form input {
+    height: 1.5em;
+  }
+  form button {
+    margin-top: 2em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #eb8126;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: 0.4s ease-in-out opacity, 0.1s ease-in-out active;
+    padding: 1em;
   }
 }

@@ -16,10 +16,10 @@
             <img src="assets/images/logo.png" alt="" class="logotipo" />
           </a>
         </div>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+        <select id="language-select" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
       </nav>
     </header>
     <main>
@@ -27,11 +27,19 @@
         This website is on Mobile Only mode !
       </em>
       <section class="criar-mensagem">
-        <p>Tem uma mensagem que gostaria de partilhar?</p>
-        <a class="btn-criar" href="./criar-mensagem.html">Criar</a>
+        <p data-lang="en">Do you have a message you would like to share?</p>
+        <p data-lang="pt">Tem uma mensagem que gostaria de partilhar?</p>
+        <a class="btn-criar" href="./criar-mensagem.html">
+          <img src="/assets/images/3781605.png" alt="" />
+          <span data-lang="en">Create</span>
+          <span data-lang="pt">Criar</span>
+        </a>
       </section>
       <section class="sec-todas-mensagens">
-        <h2>Mensagens deixadas por outras pessoas</h2>
+        <div class="title">
+          <h2 data-lang="en">Messages left by other people</h2>
+          <h2 data-lang="pt">Mensagens deixadas por outras pessoas</h2>
+        </div>
         <div id="mensagens-container">
           <!-- <div class="mensagem">
             <div class="fita-1"></div>
@@ -47,5 +55,6 @@
     </main>
 
     <script type="module" src="/assets/js/supabase.js"></script>
+    <script src="/assets/js/language.js"></script>
   </body>
 </html>

@@ -15,25 +15,50 @@
             <img src="assets/images/logo.png" alt="" class="logotipo" />
           </a>
         </div>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+        <select id="language-select" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
       </nav>
     </header>
     <main>
-      <h1>Nova Mensagem</h1>
-      <form id="mensagemForm">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" />
-        <br />
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="8" required></textarea>
-        <br />
-        <button type="submit">Criar</button>
-      </form>
-      <p id="feedback"></p>
+      <em class="mobile-only-message">
+        This website is on Mobile Only mode !
+      </em>
+      <section>
+        <h1 data-lang="en">New Message</h1>
+        <h1 data-lang="pt">Nova Mensagem</h1>
+        <div class="help-me-pls">
+          <a class="back-btn" data-lang="en" href="/mensagens.html"> ⇦ Back</a>
+          <a class="back-btn" data-lang="pt" href="/mensagens.html">
+            ⇦ Voltar</a
+          >
+
+          <form id="mensagemForm">
+            <label data-lang="en" for="nome">Name:</label>
+            <label data-lang="pt" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="name" />
+            <br />
+            <label data-lang="en" for="mensagem">Message:</label>
+            <label data-lang="pt" for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="8"
+              placeholder="message"
+              required
+            ></textarea>
+            <br />
+            <button type="submit">
+              <span data-lang="en">Create</span>
+              <span data-lang="pt">Criar</span>
+            </button>
+          </form>
+        </div>
+        <p id="feedback"></p>
+      </section>
     </main>
     <script type="module" src="./assets/js/criar.mesn.js"></script>
+    <script src="/assets/js/language.js"></script>
   </body>
 </html>

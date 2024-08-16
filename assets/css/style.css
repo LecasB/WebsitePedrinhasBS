@@ -12,6 +12,67 @@ nav {
   display: none;
 }
 @media (max-width: 500px) {
+  [data-lang] {
+    display: none;
+  }
+
+  [data-lang].active {
+    display: block;
+  }
+
+  #language-select {
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    /* border: none !important;
+    outline: 0px !important; */
+  }
+
+  #language-select option {
+    background-color: #333;
+    color: white;
+    /*     border: none !important;
+    outline: 0px !important; */
+  }
+
+  /* From Uiverse.io by ferlagher */
+  .view .viewmore {
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background: #bf0426;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    color: #dedede;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  }
+
+  .view .viewmore::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      135deg,
+      #f0f0f0 0%,
+      #f0f0f0 50%,
+      rgb(194 124 116) 50%,
+      rgb(194 124 116) 60%
+    );
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+
+  .view .viewmore::before {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
   main {
     margin-top: 83px;
     background: rgb(43, 43, 43);

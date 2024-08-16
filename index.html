@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo.png"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/mensagem.css" />
@@ -14,10 +19,10 @@
         <div class="logo">
           <img src="assets/images/logo.png" alt="" class="logotipo" />
         </div>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+        <select id="language-select" onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
       </nav>
     </header>
 
@@ -29,15 +34,18 @@
         <div class="slides">
           <div class="slide">
             <img src="assets/images/beginnig.jpg" alt="Imagem 1" />
-            <p>Initial development of the chair</p>
+            <p data-lang="en">Initial development of the chair</p>
+            <p data-lang="pt">Desenvolvimento inicial da cadeira</p>
           </div>
           <div class="slide">
             <img src="assets/images/finaltouches.jpg" alt="Imagem 2" />
-            <p>Progress in the chair's structure</p>
+            <p data-lang="en">Progress in the chair's structure</p>
+            <p data-lang="pt">Progresso na estrutura da cadeira</p>
           </div>
           <div class="slide">
             <img src="assets/images/midle.jpg" alt="Imagem 3" />
-            <p>Final touches</p>
+            <p data-lang="en">Final touches</p>
+            <p data-lang="pt">Toques finais</p>
           </div>
           <div class="slide">
             <img src="assets/images/final.jpg" alt="Imagem 3" />
@@ -50,22 +58,33 @@
       <section class="team-work">
         <div class="contentphrase">
           <p class="paragraf-center">You will never work alone</p>
-          <h1>TEAMWORK</h1>
+          <h1 data-lang="en">TEAMWORK</h1>
+          <h1 data-lang="pt">TRABALHO DE EQUIPE</h1>
           <img
             class="img-chair"
             src="assets/images/image_123650291.JPG"
             alt="Imagem 3"
           />
-          <p>
+          <p data-lang="en">
             Just as every component in your PC relies on others to function
             perfectly, our commitment is to ensure all parts of your system work
             in harmony. When one piece stops working, the entire computer is
             affected. That's why we strive to make your computer operate as a
             true team, where each component is essential.
           </p>
+          <p data-lang="pt">
+            Tal como cada componente do seu PC depende de outros para funcionar
+            sem problemas, o nosso compromisso é garantir que todas as partes do
+            seu sistema funcionam em harmonia. Quando uma peça deixa de
+            funcionar, todo o computador é afetado. É por isso que nos
+            esforçamos para que o seu computador funcione como uma verdadeira
+            equipa, onde cada componente é essencial.
+          </p>
         </div>
-        <p class="paragraf-centere">All photos taken</p>
-        <h1 class="gallery-title">GALLERY</h1>
+        <p class="paragraf-centere" data-lang="en">All photos taken</p>
+        <p class="paragraf-centere" data-lang="pt">Todas as fotos tiradas</p>
+        <h1 class="gallery-title" data-lang="en">GALLERY</h1>
+        <h1 class="gallery-title" data-lang="pt">GALERIA</h1>
         <div class="img-container">
           <img src="assets/images/beginnig.jpg" alt="Imagem 4" />
           <img src="assets/images/finaltouches.jpg" alt="Imagem 5" />
@@ -77,11 +96,19 @@
         </div>
         <hr style="margin: 20px 10px" />
         <div id="random-mensagem" style="padding: 10px"></div>
-        <div class="view"><a href="./mensagens.html">Ver mais &#10095;</a></div>
+        <div class="view">
+          <a href="./mensagens.html" class="viewmore" data-lang="en"
+            >View more &#10095;</a
+          >
+          <a href="./mensagens.html" class="viewmore" data-lang="pt"
+            >Ver mais &#10095;</a
+          >
+        </div>
       </section>
     </main>
 
     <script src="assets/js/script.js"></script>
     <script type="module" src="assets/js/random.js"></script>
+    <script src="/assets/js/language.js"></script>
   </body>
 </html>
